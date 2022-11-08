@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="res/img/elec_logo.png" id="cookie" />
+      <h3><span id="point-counter">0</span> points</h3>
+      <p class="smol"><span id="pps-dispay">0</span> points/s</p>
+      <div class="upgrades">
+        <button id="buy-auto">
+          BUY AUTO CLICKER
+          <span class="row"> <span class="cost">10</span> points</span>
+        </button>
+        <button id="buy-click">
+          INCREASE CLICK POINT
+          <span class="row"> <span class="cost">10</span> points</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
